@@ -2,6 +2,14 @@ name: Continuous Integration
 on: push
 
 jobs:
+  hello-image:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: docker://alpine:3.12
+      with:
+        entrypoint: /bin/echo
+        args: "Hello, World! from alpine"
+
   unit-test:
     runs-on: ubuntu-latest
     steps:
