@@ -34,7 +34,7 @@ jobs:
     - name: Upload test coverage
       uses: actions/upload-artifact@v2
       with:
-        name: test-coverage-${{ matrix.os }}-${{{ matrix.node }}}
+        name: test-coverage-${{ matrix.os }}-${{ matrix.node }}
         path: coverage
   lint:
     name: Lint
