@@ -11,6 +11,7 @@
     "@cybozu/eslint-config": "^11.0.2",
     "eslint": "^7.13.0",
     "mocha": "^8.2.1",
+    "nyc": "^15.1.0",
     "prettier": "^2.1.2"
   }
 }
