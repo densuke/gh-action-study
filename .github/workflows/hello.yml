@@ -7,7 +7,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: echo "Hello, World!"
-  secrettest:
-    runs-on: ubuntu-latest
-    steps:
-    - run: echo "Hello, ${{ secrets.TESTSECRET }}"
